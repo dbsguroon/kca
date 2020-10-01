@@ -65,6 +65,11 @@ header .related a{
 }
 
 
+header .related a:nth-child(2){
+    border-left:0;
+}
+
+
 /* main */
 
 .main{
@@ -271,7 +276,9 @@ header .related a{
 .smart{
     width: 100%;
     height:auto;
-    background:url(../img/section.jpg) no-repeat center/cover;
+    background-image: url(../img/section.jpg);
+    background-repeat:no-repeat;
+    background-position: left top;
     padding: 80px 0;
 }
 
@@ -396,3 +403,109 @@ header .related a{
     margin-bottom: 34px;
 }
 
+/* news */
+
+.news{
+    width: 1100px;
+    height:auto;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.news .issue{
+    margin-top: 50px;
+    width: 49.2%;
+    height:230px;
+    float:left;
+    margin-right: 1.5%;
+    background-image: url(../img/img_08.jpg);
+    background-repeat: no-repeat;
+    background-position:100% 100%;
+    background-size:cover;
+}
+
+.news .issue:nth-child(2){
+    margin-right: 0;
+    background-image: url(../img/img_09.jpg);
+}
+
+.news .issue h2{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.news .issue p{
+    font-size:15px;
+    color:#333;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.news .issue p .num{
+    display: inline-block;
+    font-size:14px;
+    padding:3px 7px;
+    background:#7f8c97;
+    border-radius: 3px 7px 3px 7px;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height:auto;
+    background:#454545;
+    color:#adadad;
+    font-size:15px;
+    clear:both;
+}
+
+footer .address{
+    width: 1100px;
+    margin:0 auto;
+    line-height: 1.7;
+    overflow: hidden;
+}
+
+footer .address p{
+    float:left;
+    margin: 50px;
+    text-align: center;
+}
+
+footer .address p .copy{
+    font-size:12px;
+}
+
+footer .address p.flogo{
+    float:right;
+}
+
+/* top */
+
+.top{
+    float:right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+    background-color:#454545;
+    border-radius: 50%;
+    background-image: url(../img/arrow.JPG);
+    background-repeat: no-repeat;
+    background-size:15px;
+    background-position: 50% 10%;
+    position: relative;
+    transition: 0.5s;
+}
+
+.top p{
+    font-size:16px;
+    font-weight: bold;
+    color:#fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
